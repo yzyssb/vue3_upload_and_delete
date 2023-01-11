@@ -1,0 +1,175 @@
+@mixin font($size: 30rpx, $col: #333, $weight: 500, $lineH: 1) {
+	font-size: $size;
+	color: $col;
+	font-weight: $weight;
+	line-height: $lineH;
+}
+
+@mixin whb($w:702rpx,$h:100rpx,$b:#fff) {
+	width: $w;
+	height: $h;
+	background-color: $b;
+}
+
+@mixin border-rad($br: 16rpx){
+	border-top-left-radius:$br;
+	border-top-right-radius:$br;
+	border-bottom-right-radius:$br;
+	border-bottom-left-radius:$br;
+}
+
+@mixin border($size:1px,$col:#ccc) {
+	border: $size solid $col;
+}
+@mixin border-b($size:1px,$col:#ccc) {
+	border-bottom: $size solid $col;
+}
+@mixin border-t($size:1px,$col:#ccc) {
+	border-top: $size solid $col;
+}
+
+page{
+	height: 100%;
+	background: #F8F8F8;
+	font-family: PingFangSC-Regular, PingFang SC;
+}
+
+.margin24{
+	margin: 24rpx auto;
+}
+.borderRad16{
+	border-radius: 16rpx;
+}
+
+.line-one{//文本超出一行 显示省略号
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.line-two{//文本超出两行 显示省略号
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+
+input{
+	border: none;
+	outline: none;
+}
+
+.fx-row{//横向排列
+	display: flex;
+	flex-direction: row;
+}
+
+.fx-row-c{//横排 左右居中
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.fx-row-fs{//横排 左对齐
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.fx-row-fs-c{//横排 左对齐 上下居中
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.fx-row-fe{//横排 右对齐
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.fx-row-fe-c{//横排 右对齐 上下居中
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.fx-row-sb{//横排 两端对齐
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.fx-row-sb-c{//横排 两端对齐 上下居中
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fx-row-sa{//横排 两端对齐有边距
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.fx-row-sa-c{//横排 两端对齐有边距 上下居中
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.fx-row-c{//横排 上下 
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.fx-row-c-c{//横排 上下 左右居中
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.fx-c-fs{//竖排 左对齐
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.fx-1{
+	flex:1;
+}
+
+.fixed{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.clear-b{
+	clear: both;
+}
+
+.relative{
+	position: relative;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+img{
+	vertical-align: top;
+}
